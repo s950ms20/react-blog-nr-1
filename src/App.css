@@ -1,32 +1,187 @@
 .App {
-  text-align: center;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputField{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 0;
 }
 
-.App-link {
-  color: #61dafb;
+.toRight{
+    justify-content: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toCenter{
+    justify-content: center;
 }
+
+.fields{
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.addPostFields{
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex: 3 3;
+    border: 1px solid black;
+}
+
+.postFields{
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    flex: 2 1;
+    text-align: justify;
+}
+
+.PostSnippet{
+    border: 1px solid black;
+}
+
+.SinglePost{
+    min-width: 300px;
+    border: 1px solid black;
+}
+
+.titleOfPost{
+    text-align: center;
+    font-weight: bold;
+}
+
+.MyButton{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 0px white;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.MyButton a {
+    text-decoration: none;
+    color: black;
+}
+
+.MyButton:hover {
+    background-color: lightgray;
+}
+
+.LogBarAndFooter{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.footerText {
+    font-weight: initial;
+}
+
+.LogoImg {
+    max-width: 100%;
+    margin: 0px;
+}
+
+.NavigationBar {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+.NavigationBar ul{
+    list-style: none outside none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.NavigationBar ul li{
+    flex: 1 1;
+    padding: 20px;
+}
+
+.DropDownMenuButton{
+    padding: 20px;
+    display: none;
+    background-color: black;
+    color: white;
+    border: 0px;
+    width: 100%;
+    text-align: left;
+}
+
+.NavigationBar ul li:hover{
+    background-color: rgb(71, 69, 71);
+}
+
+.NavigationBar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.NavBarShow{
+    display: block;
+}
+
+.NavBarHide{
+    display: none;
+}
+
+.icon {
+    width: 19px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) */
+
+@media (max-width: 550px) {
+    .App{
+        background-color: lightgray;
+    }
+
+    .DropDownMenuButton{
+        display: inline-block;
+    }
+
+    .NavigationBar {
+        margin-top: 0px;
+        display: block;
+        background-color: black;
+        color: white;
+    }
+
+    .NavigationBar ul{
+        list-style: none outside none;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        border: 1px solid black;
+    }
+
+    .NavigationBar ul li{
+        padding: 20px;
+        text-align: center;
+    }
+}
+
